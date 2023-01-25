@@ -1,0 +1,29 @@
+- Create an Insttrument Store Database 
+
+CREATE TABLE instruments (id INTEGER PRIMARY KEY, instrument TEXT, quantity INTEGER, price INTEGER, year INTEGER); 
+
+INSERT INTO instruments VALUES (1, "flute", 20, 300, 2009);
+INSERT INTO instruments VALUES (2, "Clarinet", 40, 600, 2010);
+INSERT INTO instruments VALUES (3, "Oboe", 20, 600, 2019);
+INSERT INTO instruments VALUES (4, "Bassoon", 20, 700, 2015);
+INSERT INTO instruments VALUES (5, "Alto", 20, 300, 2010);
+INSERT INTO instruments VALUES (6, "Tenor", 15, 500, 2010);
+INSERT INTO instruments VALUES (7, "Bari", 10 , 800, 2012);
+
+INSERT INTO instruments VALUES (8, "Trumpet", 15, 300, 2008);
+INSERT INTO instruments VALUES (9, "French horn", 12, 500, 2007);
+INSERT INTO instruments VALUES (10, "Trombone" , 12, 500, 2013); 
+INSERT INTO instruments VALUES (11, "Euphonium", 10, 500, 2015);
+INSERT INTO instruments VALUES (12, "Tuba", 10, 600, 2008);
+INSERT INTO instruments VALUES (13, "Snare",  15, 200, 2012); 
+ INSERT INTO instruments VALUES (14, "Bass drum", 2, 300, 2000);
+ INSERT INTO instruments VALUES (15, "Triangle", 10, 50, 2009);
+ 
+ --display the database ordered by price. 
+SELECT * FROM instruments
+ORDER BY price desc; 
+
+--display the database ordered by year. 
+SELECT * FROM instruments
+ORDER BY year desc; 
+
